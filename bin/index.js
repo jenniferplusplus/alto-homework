@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import app from '../app.js'
-import {default as debugFactory} from 'debug'
+import logger from '../lib/logger.js'
 import http from 'http'
 
 /**
@@ -9,7 +9,7 @@ import http from 'http'
  */
 
 
-const debug = debugFactory('alto-api:server')
+const debug = logger(import.meta);
 
 /**
  * Get port from environment and store in Express.

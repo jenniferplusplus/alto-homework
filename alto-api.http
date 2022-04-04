@@ -1,4 +1,4 @@
-GET http://localhost:3000/api/item?id=99
+GET http://localhost:3000/api
 Accept: application/json
 
 ###
