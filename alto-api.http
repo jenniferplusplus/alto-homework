@@ -1,4 +1,14 @@
+### Not Found
 GET http://localhost:3000/api
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyLCIiOiIifQ.njx3omcnRAK99512Y-Q27gamEZuywkPUY2cCE9vJwyg
 Accept: application/json
 
-###
+### Not Authorized
+GET http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyLCIiOiIifQ.pfTN5ZaSdFArYxIHicqedxeIsvvLMcYClh1z82cjDJY
+Accept: application/json
+
+### GET trips/current
+GET http://localhost:3000/api/trips/current
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyLCIiOiIifQ.njx3omcnRAK99512Y-Q27gamEZuywkPUY2cCE9vJwyg
+Accept: application/json
