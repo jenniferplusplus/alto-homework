@@ -10,5 +10,5 @@ Accept: application/json
 
 ### GET trips/current
 GET http://localhost:3000/api/trips/current
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyLCIiOiIifQ.njx3omcnRAK99512Y-Q27gamEZuywkPUY2cCE9vJwyg
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWQiOiJwOTkiLCJpYXQiOjE1MTYyMzkwMjJ9.r8AtyqMhgQgWgp-2vCxC7Je4l5DLW5bXv_fS9ovxwPc
 Accept: application/json
