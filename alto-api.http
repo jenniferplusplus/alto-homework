@@ -1,3 +1,9 @@
+POST http://localhost:80/api/item
+Content-Type: application/json
+
+{}
+
+###
 ### Not Found
 GET http://localhost:3000/api
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyLCIiOiIifQ.njx3omcnRAK99512Y-Q27gamEZuywkPUY2cCE9vJwyg
@@ -12,3 +18,41 @@ Accept: application/json
 GET http://localhost:3000/api/trips/current
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWQiOiJwOTkiLCJpYXQiOjE1MTYyMzkwMjJ9.r8AtyqMhgQgWgp-2vCxC7Je4l5DLW5bXv_fS9ovxwPc
 Accept: application/json
+
+### GET trips/search
+GET http://localhost:3000/api/trips/search?fromDate=2022-04-01
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWQiOiJwOTkiLCJpYXQiOjE1MTYyMzkwMjJ9.r8AtyqMhgQgWgp-2vCxC7Je4l5DLW5bXv_fS9ovxwPc
+Accept: application/json
+
+### GET trips/search 2
+GET http://localhost:3000/api/trips/search?toDate=2022-04-01
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWQiOiJwOTkiLCJpYXQiOjE1MTYyMzkwMjJ9.r8AtyqMhgQgWgp-2vCxC7Je4l5DLW5bXv_fS9ovxwPc
+Accept: application/json
+
+### GET trips/search 3
+GET http://localhost:3000/api/trips/search?includeCancelled=true
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWQiOiJwOTkiLCJpYXQiOjE1MTYyMzkwMjJ9.r8AtyqMhgQgWgp-2vCxC7Je4l5DLW5bXv_fS9ovxwPc
+Accept: application/json
+
+### GET trips/trip/:id
+GET http://localhost:3000/api/trips/trip/t22
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWQiOiJwOTkiLCJpYXQiOjE1MTYyMzkwMjJ9.r8AtyqMhgQgWgp-2vCxC7Je4l5DLW5bXv_fS9ovxwPc
+Accept: application/json
+
+### GET trips/trip/:id invalid
+GET http://localhost:3000/api/trips/trip/t47
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWQiOiJwOTkiLCJpYXQiOjE1MTYyMzkwMjJ9.r8AtyqMhgQgWgp-2vCxC7Je4l5DLW5bXv_fS9ovxwPc
+Accept: application/json
+
+### DELETE trips/trip/:id
+DELETE http://localhost:3000/api/trips/trip/t22
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWQiOiJwOTkiLCJpYXQiOjE1MTYyMzkwMjJ9.r8AtyqMhgQgWgp-2vCxC7Je4l5DLW5bXv_fS9ovxwPc
+Accept: application/json
+
+### POST trips/trip/:id
+POST http://localhost:3000/api/trips/trip/t22
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWQiOiJwOTkiLCJpYXQiOjE1MTYyMzkwMjJ9.r8AtyqMhgQgWgp-2vCxC7Je4l5DLW5bXv_fS9ovxwPc
+Accept: application/json
+Content-Type: application/json
+
+{"note": "Last minute note update"}

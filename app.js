@@ -1,7 +1,6 @@
 import express from 'express'
 import logger from 'morgan'
 
-import indexRoutes from './middleware/index.js'
 import {default as tripRoutes} from './api/trips/routes.js'
 import {notFound, authError} from './middleware/errors.js'
 import auth from './middleware/auth.js'

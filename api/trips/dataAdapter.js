@@ -9,16 +9,16 @@ const dataSet = JSON.parse(fb.toString());
  * ORM.
  * The class is exposed as a singleton that maintains an in-memory copy of its own data.
  * A real adapter would be heavily dependent on the ORM, data model, and storage
- * technology being used. Which I imagine is not simple.
+ * technology being used. Which I imagine is not simple for your system.
  */
 class TripAdapter{
     constructor(){
         const data = {...dataSet}
         this.data = data.results;
         this.map = {};
-        for (const each in this.data){
-            this.map[each.id] = each;
-        }
+        this.data.forEach((each) => {
+            this.map[each.id] = each
+        });
     }
 
     get(tripId, passengerId){
@@ -26,9 +26,6 @@ class TripAdapter{
         if (trip?.passengerId === passengerId){
             return trip;
         }
-        // return this.data.find((e, i, a) => {
-        //     return e.id === tripId && e.passengerId === passengerId
-        // })
     }
 
     getCurrent(passengerId){
@@ -41,10 +38,10 @@ class TripAdapter{
         return this.data.filter((e, i, a) => {
             if(e.passengerId !== passengerId) return false;
             if(!includeCancelled && e.cancelled) return false;
-            const afterFromDate = fromDate !== null
+            const afterFromDate = !!fromDate
                 ? new Date(e.completed || e.requested) >= fromDate
                 : true
-            const beforeEndDate = toDate !== null
+            const beforeEndDate = !!toDate
                 ? new Date(e.completed || e.requested) <= toDate
                 : true
             return afterFromDate && beforeEndDate
@@ -55,7 +52,7 @@ class TripAdapter{
         let trip = this.get(tripId, passengerId)
         if (!trip) return undefined;
 
-        trip = {...trip, ...updateData}
+        Object.assign(trip, updateData);
         return trip;
     }
 }
