@@ -15,7 +15,7 @@ class DriverService {
         const trip = this.tripDataAdapter.getCurrent(this.passengerId);
         if (trip === undefined) return;
 
-        const driver = this.driverDataAdapter.get(trip.driverId);
+        const driver = {...this.driverDataAdapter.get(trip.driverId)};
         delete driver.assignedPhone;
 
         return driver;

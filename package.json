@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node bin/index.js",
-    "debug": "DEBUG=alto-api:* node bin/index.js"
+    "start": "node bin/index.js"
   },
   "type": "module",
   "dependencies": {

@@ -1,4 +1,4 @@
-import tripService from '../trips/tripsService.js'
+import tripDataAdapter from '../trips/dataAdapter.js'
 import vehicleDataAdapter from './dataAdapter.js'
 import logger from '../../lib/logger.js'
 
@@ -10,13 +10,13 @@ class VehicleService {
     constructor(passengerId) {
         this.passengerId = passengerId;
         this.vehicleAdapter = vehicleDataAdapter;
-        this.tripService = new tripService(passengerId);
+        this.tripDataAdapter = tripDataAdapter
     }
 
     static log = logger(import.meta);
 
     getAssigned(){
-        const trip = this.tripService.getTripInProgress();
+        const trip = this.tripDataAdapter.getCurrent(this.passengerId);
         if (trip === undefined) return;
 
         const vehicle = this.vehicleAdapter.get(trip.vehicleId);
