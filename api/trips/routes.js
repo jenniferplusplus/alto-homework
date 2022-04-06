@@ -48,7 +48,7 @@ routes.delete('/trips/trip/:id', (req, res, next) => {
 })
 
 /***
- * Edit a single trip by id
+ * Update the note on a single trip by id
  */
 routes.post('/trips/trip/:id', (req, res, next) => {
     const svc = new tripsService(req.user.id);

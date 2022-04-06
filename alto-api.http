@@ -56,3 +56,21 @@ Accept: application/json
 Content-Type: application/json
 
 {"note": "Last minute note update"}
+
+### GET vehicle/assigned
+GET http://localhost:3000/api/vehicles/assigned
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWQiOiJwOTkiLCJpYXQiOjE1MTYyMzkwMjJ9.r8AtyqMhgQgWgp-2vCxC7Je4l5DLW5bXv_fS9ovxwPc
+Accept: application/json
+
+### PUT vehicle/assigned/identify
+PUT http://localhost:3000/api/vehicles/assigned/identify
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWQiOiJwOTkiLCJpYXQiOjE1MTYyMzkwMjJ9.r8AtyqMhgQgWgp-2vCxC7Je4l5DLW5bXv_fS9ovxwPc
+Accept: application/json
+
+### POST vehicle/assigned/vibe
+POST http://localhost:3000/api/vehicles/assigned/vibe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWQiOiJwOTkiLCJpYXQiOjE1MTYyMzkwMjJ9.r8AtyqMhgQgWgp-2vCxC7Je4l5DLW5bXv_fS9ovxwPc
+Accept: application/json
+Content-Type: application/json
+
+{"vibe": "Hip Hop Bops"}

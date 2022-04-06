@@ -1,0 +1,34 @@
+{
+  "results": [
+    {
+      "id": "v09",
+      "name": "Alto 09",
+      "year": "2019",
+      "make": "Volkswagen",
+      "model": "Atlas",
+      "color": "Pure White",
+      "maxPassengers": 5,
+      "vibe": "Vaporwave Beats"
+    },
+    {
+      "id": "v14",
+      "name": "Alto 14",
+      "year": "2017",
+      "make": "Buick",
+      "model": "Enclave",
+      "color": "Ice White",
+      "maxPassengers": 5,
+      "vibe": "Seasonal Jams"
+    },
+    {
+      "id": "v30",
+      "name": "Alto 30",
+      "year": "2017",
+      "make": "Buick",
+      "model": "Enclave",
+      "color": "Art Wrap",
+      "maxPassengers": 5,
+      "vibe": "Void"
+    }
+  ]
+}
