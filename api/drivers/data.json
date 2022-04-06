@@ -1,0 +1,25 @@
+{
+  "results": [
+    {
+      "id": "d03",
+      "name": "Steph",
+      "bio": "Steph is a graduate of Parsons New School....",
+      "assignedPhone": "469-555-1001",
+      "photoUrl": "https://files.alto.com/drivers/d03/2.jpg"
+    },
+    {
+      "id": "d07",
+      "name": "Tony",
+      "bio": "Tony is a father of two and former....",
+      "assignedPhone": "469-555-1008",
+      "photoUrl": "https://files.alto.com/drivers/d07/1.jpg"
+    },
+    {
+      "id": "d19",
+      "name": "June",
+      "bio": "June attended culinary school at the Austin....",
+      "assignedPhone": "469-555-1013",
+      "photoUrl": "https://files.alto.com/drivers/d19/1.jpg"
+    }
+  ]
+}

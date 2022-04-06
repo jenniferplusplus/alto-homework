@@ -8,7 +8,8 @@
       "model": "Atlas",
       "color": "Pure White",
       "maxPassengers": 5,
-      "vibe": "Vaporwave Beats"
+      "vibe": "Vaporwave Beats",
+      "photoUrl": "https://files.alto.com/vehicles/v09/1.jpg"
     },
     {
       "id": "v14",
@@ -18,7 +19,8 @@
       "model": "Enclave",
       "color": "Ice White",
       "maxPassengers": 5,
-      "vibe": "Seasonal Jams"
+      "vibe": "Seasonal Jams",
+      "photoUrl": "https://files.alto.com/vehicles/v14/1.jpg"
     },
     {
       "id": "v30",
@@ -28,7 +30,8 @@
       "model": "Enclave",
       "color": "Art Wrap",
       "maxPassengers": 5,
-      "vibe": "Void"
+      "vibe": "Void",
+      "photoUrl": "https://files.alto.com/vehicles/v30/4.jpg"
     }
   ]
 }

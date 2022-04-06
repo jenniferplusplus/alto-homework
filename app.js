@@ -3,6 +3,7 @@ import logger from 'morgan'
 
 import {default as tripRoutes} from './api/trips/routes.js'
 import {default as vehicleRoutes} from './api/vehicles/routes.js'
+import {default as driverRoutes} from './api/drivers/routes.js'
 import {notFound, authError} from './middleware/errors.js'
 import auth from './middleware/auth.js'
 
@@ -14,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(auth);
 
-app.use('/api', tripRoutes, vehicleRoutes);
+app.use('/api', tripRoutes, vehicleRoutes, driverRoutes);
 
 app.use(notFound);
 app.use(authError);

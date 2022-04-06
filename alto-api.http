@@ -74,3 +74,13 @@ Accept: application/json
 Content-Type: application/json
 
 {"vibe": "Hip Hop Bops"}
+
+### GET drivers/assigned
+GET http://localhost:3000/api/drivers/assigned
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWQiOiJwOTkiLCJpYXQiOjE1MTYyMzkwMjJ9.r8AtyqMhgQgWgp-2vCxC7Je4l5DLW5bXv_fS9ovxwPc
+Accept: application/json
+
+### GET drivers/assigned/contact
+GET http://localhost:3000/api/drivers/assigned/contact
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWQiOiJwOTkiLCJpYXQiOjE1MTYyMzkwMjJ9.r8AtyqMhgQgWgp-2vCxC7Je4l5DLW5bXv_fS9ovxwPc
+Accept: application/json
